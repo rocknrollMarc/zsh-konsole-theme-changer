@@ -9,10 +9,10 @@ _THEME=0;
 function change_theme(){
 	if [[ $_THEME == 0 ]]; then
 		_THEME=1
-		printf "\033]50;%s\a" "$THEME_TWO"
+		printf "\033]50;colors=%s\a" "$THEME_TWO"
 	else
 		_THEME=0
-		printf "\033]50;%s\a" "$THEME_ONE"
+		printf "\033]50;colors=%s\a" "$THEME_ONE"
 	fi
 }
 
