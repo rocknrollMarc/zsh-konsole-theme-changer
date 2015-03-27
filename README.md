@@ -3,7 +3,7 @@ Change [konsole](https://konsole.kde.org) theme from zsh.
 
 Press `F12` for changing konsole theme. 
 
-### Instalation
+## Instalation
 #### If you use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * `git clone https://github.com/horosgrisa/zsh-konsole-theme-changer ~/.oh-my-zsh/custom/plugins/konsole-theme-changer`
 * Add `konsole-theme-changer` in `plugins` variable. 
