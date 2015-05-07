@@ -2,6 +2,7 @@
 
 THEME_ONE="Solarized"
 THEME_TWO="SolarizedLight"
+CHANGE_COLOR_KEY="^[[24"
 
 _KONSOLE_THEME=0;
 
@@ -17,4 +18,8 @@ function change_theme(){
 
 zle -N change_theme
 
-bindkey "^[[24~" change_theme
+function _konsole-theme-changer(){
+    bindkey $CHANGE_COLOR_KEY change_theme
+}
+
+_ZPM_End_hooks=( $_ZPM_End_hooks _konsole-theme-changer )
