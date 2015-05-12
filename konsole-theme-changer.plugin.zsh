@@ -20,6 +20,7 @@ zle -N change_theme
 
 function _konsole-theme-changer(){
     bindkey $CHANGE_COLOR_KEY change_theme
+    precmd_functions=(${precmd_functions#_konsole-theme-changer})
 }
 
-_ZPM_End_hooks=( $_ZPM_End_hooks _konsole-theme-changer )
+precmd_functions+=( _konsole-theme-changer )
